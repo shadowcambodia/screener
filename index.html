@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./index.js"></script>
+	<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+<style>
+	#container {
+		display: grid;
+		background-color: red;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 5px;
+	}
+	ul > li {
+    display: inline-block;
+		border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    /* You can also add some margins here to make it look prettier */
+}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="interval" id="in1mn">1mn</li>
+			<li class="interval" id="in3mn">3mn</li>
+			<li class="interval" id="in5mn">5mn</li>
+			<li class="interval" id="in15mn">15mn</li>
+			<li class="interval" id="in30mn">30mn</li>
+			<li class="interval" id="in1h">1h</li>
+			<li class="interval" id="in2h">2h</li>
+			<li class="interval" id="in3h">3h</li>
+			<li class="interval" id="in4h">4h</li>
+			<li class="interval" id="inD">D</li>
+		</ul>
+	</nav>
+	<div id="container"></div>
+</body>
+</html>
